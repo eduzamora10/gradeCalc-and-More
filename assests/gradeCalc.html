@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link   
+        rel="stylesheet"
+        href="../styles.css" 
+    />
+    <link rel="icon" type="image/x-icon" href="../assests/calculator.png">
+</head>
+<body>
+    
+
+    <div class="container">
+        
+        <div class="grid-container">
+            <h1 class="assignment">Assignment (Optional)</h1>
+            <h1 class="grade">Grade (%)</h1>
+            <h1 class="weight">Weight (%)</h1>
+            <div class="grid-assignment"><input autocomplete="off" min="0" max="100" class="input assignment"/></div>
+            <div class="grid-grade"><input autocomplete="off" min="0" max="100"  type="number" id="grade1" class="input grade"/></div>
+            <div class="grid-weight"><input autocomplete="off" min="0" max="100"  type="number" id="weight1" class="input weight"/></div>
+            <div class="grid-assignment"><input autocomplete="off" min="0" max="100"  class="input assignment"/></div>
+            <div class="grid-grade"><input autocomplete="off" min="0" max="100"  type="number" id="grade2" class="input grade"/></div>
+            <div class="grid-weight"><input autocomplete="off" min="0" max="100"  type="number" id="weight2" class="input weight"/></div>
+            <div class="grid-assignment"><input autocomplete="off" min="0" max="100"  class="input assignment"/></div>
+            <div class="grid-grade"><input autocomplete="off" min="0" max="100"  type="number" id="grade3" class="input grade"/></div>
+            <div class="grid-weight"><input autocomplete="off" min="0" max="100"  type="number" id="weight3" class="input weight"/></div>
+            <div class="grid-assignment"><input autocomplete="off" min="0" max="100"  class="input assignment"/></div>
+            <div class="grid-grade"><input autocomplete="off" min="0" max="100"  type="number" id="grade4" class="input grade"/></div>
+            <div class="grid-weight"><input autocomplete="off" min="0" max="100"  type="number" id="weight4" class="input weight"/></div>
+            <div class="grid-assignment"><input autocomplete="off" min="0" max="100"  class="input assignment"/></div>
+            <div class="grid-grade"><input autocomplete="off" min="0" max="100"  type="number" id="grade5" class="input grade"/></div>
+            <div class="grid-weight"><input autocomplete="off" min="0" max="100"  type="number" id="weight5" class="input weight"/></div>
+            <div class="grid-assignment"><input autocomplete="off" min="0" max="100"  class="input assignment"/></div>
+            <div class="grid-grade"><input autocomplete="off" min="0" max="100"  type="number" id="grade6" class="input grade"/></div>
+            <div class="grid-weight"><input autocomplete="off" min="0" max="100"  type="number" id="weight6" class="input weight"/></div>
+            <div class="grid-assignment"><input autocomplete="off" min="0" max="100"  class="input assignment"/></div>
+            <div class="grid-grade"><input autocomplete="off" min="0" max="100"  type="number" id="grade7" class="input grade"/></div>
+            <div class="grid-weight"><input autocomplete="off" min="0" max="100"  type="number" id="weight7" class="input weight"/></div>
+            <div class="grid-assignment"><input autocomplete="off" min="0" max="100"  class="input assignment"/></div>
+            <div class="grid-grade"><input autocomplete="off" min="0" max="100"  type="number" id="grade8" class="input grade"/></div>
+            <div class="grid-weight"><input autocomplete="off" min="0" max="100"  type="number" id="weight8" class="input weight"/></div>
+          </div> 
+    </div>
+
+    <div class="display">
+        
+        <div class="red">
+            <button onclick="getGrade()" class="submit-gpa calculate">
+                Calculate
+            </button>
+
+            <div class="green">
+                <h3>Grade</h3>
+                <input readonly class="output" type="text" id="display-gradenum"/>
+            </div>
+
+            <div class="green">
+                <h3>Grade Letter</h3>
+                <input readonly class="output" type="text" id="display-gradeletter"/>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
+</body>
+</html>

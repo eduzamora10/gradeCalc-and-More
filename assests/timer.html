@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Clock</title>
+    <link   
+        rel="stylesheet"
+        href="../styles.css" 
+    />
+    <link rel="icon" type="image/x-icon" href="../assests/timer.png">
+</head>
+<body>
+
+    <div class="container text">
+        <h1 class="time-msg">
+            Select Duration of Timer
+        </h1>
+    </div>
+    
+    <div class=" container time-container">
+        <input min="0" id="hours" type="number" list="times" placeholder="Hours" class="input-time">
+        <datalist id="times">
+            <option> 1</option>
+            <option> 2</option>
+            <option> 3</option>
+            <option> 4</option>
+            <option> 5</option>
+        </datalist>
+
+        <input min="0" id="mins" type="number" class="input-time" list="times2" placeholder="Minutes"/>
+            <datalist id="times2">
+                <option> 1</option>
+                <option> 5</option>
+                <option> 10</option>
+                <option> 15</option>
+                <option> 30</option>
+            </datalist>
+
+        <input min="0" id="secs" type="number" list="times3" placeholder="Seconds" class="input-time">
+            <datalist id="times3">
+                <option> 5</option>
+                <option> 10</option>
+                <option> 15</option>
+                <option> 30</option>
+            </datalist>
+    </div>
+
+
+    <div class="container timer-btn">
+        <button onclick="startTime()" class="btn submit-timer">
+            <img src="./play-pause.png" class="icon-1">
+        </button>
+
+        <button onclick="restart()" class="btn submit-timer restart">
+            <img src="./restart.png" class="icon-2">
+        </button>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
+</body>
+</html>
